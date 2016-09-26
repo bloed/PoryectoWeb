@@ -1,7 +1,7 @@
 /*
 Global Items
 */
- h1, h2, h3, h4, h5, h6, p, label, .btn, a, form, div{
+ h1, h2, h3, h4, h5, h6, p, label, button, .btn, a, form, div{
 	font-family:Roboto;
 }
 /*
@@ -152,8 +152,10 @@ Buscador
 
 }
 .formBusqueda{
+    display: block;
     margin-top:10%;
-    margin-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
 }
 .inputSearch {
@@ -169,15 +171,6 @@ Buscador
     background-repeat: no-repeat;
     background-size: 25px;
     padding: 12px 20px 12px 40px;
-}
-
-inputSearch[type=text]:focus {
-    width: 100%;
-}
-.opcionesAvanzadas{
-    margin-top:10%;
-    margin-left: 10%;
-    display: block;
 }
 
 
@@ -216,6 +209,7 @@ Resultados
     
 }
 
+
 /*
 Infoavisos
 */
@@ -253,7 +247,32 @@ Infoavisos
     width: 100%
 }
 
-
+/*
+    CMS Resultados
+*/
+.btnsCMSResultados{
+    margin-top: 100px;
+    float:left;
+    width: 20%;
+}
+.btnVerMasCMS{
+    border: 1;
+    width: 100px;
+    margin-left: 30px;
+    border-color: black;
+    padding: 10px;
+    background: white;
+}
+.btnAgregarRutaCMS{
+    border: 1;
+    width: 100px;
+    border-color: black;
+    padding: 10px;
+    background: white;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 
 
