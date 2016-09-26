@@ -78,6 +78,57 @@ Info in HomePage
     height: 200px;
 }
 
+
+/*
+Info Formulario
+*/
+.imagenDinamica{
+    width: 60%; 
+    padding-top: 10%;
+    margin: auto 0;
+}
+.infoEmpresa{
+    float: left;
+    width: 30%;
+    text-align: center; 
+    vertical-align: center;   
+    height: 500px;
+    justify-content:center;
+    align-items:center; 
+}
+
+.formulario{
+    float: left;
+    width: 70%;
+    text-align: center; 
+    vertical-align: center;   
+    height: 500px;
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+}
+
+.mainFormulario{
+    height: 500px;
+    width: 100%;
+}
+form{
+    text-align:left;
+    width :50.5%;
+}
+label{
+    font-weight: bold;
+}
+input[type="text"], textarea, input[type="submit"]{ 
+    font-family:Roboto;
+    font-size: 14px;
+}
+input[type="submit"]{
+    float:right;
+    background-color: white;
+    border: 1px solid #333333;
+}
+
 /*
 Footer
 */
