@@ -4,6 +4,22 @@ Global Items
  h1, h2, h3, h4, h5, h6, p, label, button, .btn, a, form, div{
 	font-family:Roboto;
 }
+
+/*
+    Header
+*/
+header{
+    width: 100%;
+    height: 150px;
+    background-color: #444;
+    padding-top: 1%;
+}
+header img{
+    width: 9%;
+    height: 85%;
+    text-align: center;
+    padding-left: 1%;
+}
 /*
 Nav Bar
 */
@@ -267,6 +283,16 @@ Infoavisos
 .navBar .liInfoaviso{
     float: initial;
     width: 100%
+}
+/*
+    Info Paradas
+*/
+.paradas{
+    width: 50%;
+    float: left;
+    text-align: center;
+    justify-content:center;
+    align-items:center; 
 }
 
 /*
