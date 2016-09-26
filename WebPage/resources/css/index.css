@@ -87,3 +87,86 @@ Footer
     color: white;
     height: 40px;
 }
+
+/*
+Buscador
+*/
+.busqueda{
+    display:absolute;
+    height: 600px;
+}
+.ingresoBusqueda{
+    float: left;
+    width: 28%;  
+
+}
+.formBusqueda{
+    margin-top:10%;
+    margin-left: 10%;
+    display: block;
+}
+.inputSearch {
+    
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('images/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding: 12px 20px 12px 40px;
+}
+
+inputSearch[type=text]:focus {
+    width: 100%;
+}
+.opcionesAvanzadas{
+    margin-top:10%;
+    margin-left: 10%;
+    display: block;
+}
+
+
+.resultados{
+    float: left;
+    width: 70%;  
+    border-left: 2px solid black;
+    height: 500px;
+    overflow: scroll;
+}
+
+/*
+Resultados
+*/
+.resultado{
+    height: 200px;
+    display: relative;
+}
+
+.imgResultado{
+    float: left;
+    height: 200px;
+    width: 30%;
+}
+.descripcionResultado{
+    float: left;
+    width: 50%
+}
+.btnVerMas{
+    margin-top: 100px;
+    float:left;
+    width: 20%;
+    border: 1;
+    border-color: black;
+    padding: 10px;
+    background: white;
+    
+}
+
+
+
+
+
