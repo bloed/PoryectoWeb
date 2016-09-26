@@ -184,7 +184,6 @@ inputSearch[type=text]:focus {
 .resultados{
     float: left;
     width: 70%;  
-    border-left: 2px solid black;
     height: 500px;
     overflow: scroll;
 }
@@ -216,6 +215,45 @@ Resultados
     background: white;
     
 }
+
+/*
+Infoavisos
+*/
+.infoavisos{
+    display:absolute;
+    height: 600px;
+    text-align: center;
+}
+.opcionesInfoAviso{
+    float: left;
+    width: 28%;  
+}
+.avisos{
+    float: left;
+    width: 70%;  
+    height: 500px;
+    overflow: scroll;
+    text-align: center;
+}
+.imgInfoAviso{
+    width: 40%;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aviso{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+}
+.liInfoaviso{
+    float: initial;
+    width: 100%
+}
+
+
 
 
 
