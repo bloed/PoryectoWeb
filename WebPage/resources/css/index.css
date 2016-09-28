@@ -247,6 +247,58 @@ Resultados
     
 }
 
+.h3block{
+    display: block;
+    float: left;
+    width: 100%;
+}
+.modificarComentario{
+    border: 1px solid black;
+    height: 80%;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    text-align: left;
+    overflow-y: scroll;
+    overflow-x: auto;
+    float: left;
+}
+
+.modificarContenedor{
+    display: block;
+    height: 33%;
+}
+.agregarContenedorArriba{
+    display: block;
+    height: 40%;
+}
+.agregarGenericotrio{
+    float: left;
+    width: 33%;
+}
+.modificarGenericocuadruple{
+    float: left;
+    width: 25%;
+}
+.agregarGenericoDobleR{
+    float: left;
+    width: 40%;
+    text-align: left 
+}
+.agregarGenericoDobleL{
+    float: left;
+    width: 20%;
+    margin-left: 30%; 
+    text-align: left;
+}
+
+.CMS{
+    float: left;
+    width: 70%;
+    height: 100%;  
+    text-align: center;
+}
+
 
 /*
 InfoComentarios
@@ -306,7 +358,13 @@ button.comentarioButton{
 
 /*
 Infoavisos
+el pro amplia el height, lo mejor seria usar porcentajes desde un inicio
 */
+.infoavisospro{
+    display:absolute;
+    height: 900px;
+    text-align: center;
+}
 .infoavisos{
     display:absolute;
     height: 600px;
@@ -335,6 +393,15 @@ Infoavisos
     padding: 10px;
     margin: 10px;
     text-align: left;
+}
+.avisopro{
+    border: 1px solid black;
+    height: 50%;
+    margin: 10px;
+    text-align: left;
+    overflow-x: auto;
+    overflow-y: scroll;
+
 }
 .navBar .liInfoaviso{
     float: initial;
@@ -380,6 +447,17 @@ ul.paradas{
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+.btnSimpleDesign{
+    border: 1;
+    width: 100px;
+    border-color: black;
+    background: white;
+}
+.btnSimpleDesignLong{
+    border: 1;
+    border-color: black;
+    background: white;
 }
 
 
