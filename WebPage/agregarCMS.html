@@ -20,66 +20,57 @@
             <div class ="opcionesInfoAviso">
                 <img class ="imgInfoAviso" src="resources/images/qr.png" alt="">
 
-                <button class="btnSimpleDesign">Agregar imagen</button>
+                <h3>Foto: <input type="file" id="imagen" name="imagen" accept="image/*" /></h3>
 
-                <h3>Nombre: <input type="text" name="iAsunto" value=""></h3>
+                <h3>Nombre: <input type="text" id="nombre" name="nombre" value="Nuevo Nombre"></h3>
 
-                <h3>Tarifa: <input type="text" name="iAsunto" value=""></h3>
+                <h3>Tarifa: <input type="text" id ="tarifa" name="tarifa" value="500"></h3>
 
                 <ul class= "navBar">
-                    <li class="liInfoaviso"> <a class= "ainfoaviso" href="infoParadas.html">Paradas/Horario</a></li>
-                    <li class="liInfoaviso"><a href="infoComentarios.html">Comentarios Ruta/Chofer</a></li>
-                    <li class="liInfoaviso"><a href="infoAvisos.html">Avisos Importantes</a></li>
+                    <li class="liInfoaviso"> <a class= "ainfoaviso" href="#">Paradas/Horario</a></li>
+                    <li class="liInfoaviso"><a href="#">Comentarios Ruta/Chofer</a></li>
+                    <li class="liInfoaviso"><a href="#">Avisos Importantes</a></li>
                 </ul>
                 
             </div>
             <div class="CMS">
                 <div class="agregarContenedorArriba">
-                    <div class="agregarGenericotrio">
+                    <div id="divTiempo" class="agregarGenericotrio">
                         <h3>Tiempo salida</h3>
-                        <input type="text" name="iAsunto" value="tiempo1">
-                        <br>
-                        <input type="text" name="iAsunto" value="tiempo2">
+
                         <br><br>
-                        <input type="text" name="iAsunto" value=""><br><br>
-                        <button class="btnSimpleDesign">Agregar</button>
+                        <input type="text" id="tiempoSalida" name="tiempoSalida" value="1:00"><br><br>
+                        <button class="btnSimpleDesign" onclick="agregarTiempoSalida()">Agregar</button>
                     </div>
-                    <div class="agregarGenericotrio">
+                    <div id="divParadas" class="agregarGenericotrio">
                         <h3>Paradas</h3>
-                        <input type="text" name="iAsunto" value="parada1">
-                        <br>
-                        <input type="text" name="iAsunto" value="parada2">
-                        <br>
-                        <input type="text" name="iAsunto" value="parada3">
+
                         <br><br>
-                        <input type="text" name="iAsunto" value=""><br><br>
-                        <button class="btnSimpleDesign">Agregar</button>
+                        <input type="text" id="paradas" name="paradas" value="Nueva Parada"><br><br>
+                        <button class="btnSimpleDesign" onclick="agregarParadas()">Agregar</button>
                     </div>
-                    <div class="agregarGenericotrio">
+                    <div id="divTiempoExtra" class="agregarGenericotrio">
                         <h3>Tiempo Extra</h3>
-                        <input type="text" name="iAsunto" value="tiempomas1">
-                        <br>
-                        <input type="text" name="iAsunto" value="tiempomas2">
-                        <br>
-                        <input type="text" name="iAsunto" value="tiempomas3">
-                        <br>
+
                     </div>
                 </div>
                 <div class="agregarContenedorArriba">
                     <h3> Conductores </h3>
-                    <div class="agregarGenericoDobleL">
+                    <div class="agregarGenericoDobleL" id="divCedula">
                         <h3>Cedula</h3>
-                        <input type="text" name="iAsunto" value="123456789">
-                        <input type="text" name="iAsunto" value="">
+                        
+                        <br><br>
+                        <input type="text" id="cedula" name="cedula" value="123456789">
                     </div>
-                    <div class="agregarGenericoDobleR">
+                    <div class="agregarGenericoDobleR" id="divNombreConductor">
                         <h3>Nombre</h3>
-                        <input type="text" name="iAsunto" value="Pedro Perez Sanchez">
-                        <br>
-                        <input type="text" name="iAsunto" value=""> <button class="btnSimpleDesign">Agregar</button>
+                        
+                        <br><br>
+                        <input type="text" id="nombreConductor" name="nombreConductor" value="Salomón Peréz"> <br><br>
+                        <button class="btnSimpleDesign" onclick="agregarConductor()">Agregar</button>
                     </div>
                 </div>
-                    <a href="busquedaCMS.html"><button class="btnSimpleDesignLong">Finalizar creacion de ruta</button></a>
+                    <a href="busquedaCMS.html"><button type="submit" onclick="crearRuta()" class="btnSimpleDesignLong">Finalizar creacion de ruta</button></a>
             </div>
         </div>
 
@@ -87,6 +78,6 @@
         <div class="footer">
             Access to facebook
         </div>
-
+    <script type="text/javascript" src="resources/js/agregarCMS.js"></script>
     </body>
 </html>

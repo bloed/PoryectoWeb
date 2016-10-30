@@ -1,0 +1,62 @@
+Requerimientos (puede que falten más, agregenlos por cualquier cosa).
+
+INDEX.HTML FÁCIL. Joshua.
+- Display imágenes                                               LISTO.
+- Cargar información de inicio.
+
+ACERCADE.HTML FÁCIL. Joshua.
+- Cargar requisitos en la lista.
+- Carga información del lado.
+
+CONTACTOS.HTML FÁCIL. Joshua.
+- Cargar información del lado.
+- Mandar información del formulario al PHP.
+
+BUSQUEDA.HTML  NORMAL Adrián.
+- Cargar información de un conjunto de rutas o conductores.
+- Conseguir la información del buscador y mandarlo al PHP.
+
+INFOPARADAS.HTML DIFÍCIL. Joshua.
+- Cargar nombre de la parada.
+- Cargar la tarifa.
+- Cargar los horarios de salida.
+- Cargar las paradas.
+
+INFOCOMENTARIOS.HTML DIFÍCIL Joshua.
+- Cargar nombre de la parada.
+- Cargar la tarifa.
+- Cargar nombres de la ruta/Chofer.
+- Cargar comentarios aceptados de rutas.
+- Cargar comentarios aceptados de chofer.
+
+INFOAVISOS.HTML NORMAL. Joshua.
+- Cargar nombre de la parada.
+- Cargar la tarifa.
+- Cargar cada uno de los avisos.
+
+LOGIN.HTML FÁCIL. Adrián.
+- Conseguir campos y mandarlos al php.
+
+BusquedaCMS.HTML Difícil. Adrián.
+- Cargar información de un conjunto de rutas o conductores.
+- Conseguir la información del buscador y mandarlo al PHP.
+- Poder eliminar rutas.
+
+MODIFICARCMS.HTML DIFÍCILÍSIMA Josué
+- Cargar nombre de la parada.                                    LISTO
+- Cargar (y modificar) Tarifa.                                   LISTO
+- Cargar, agregar y modificar Tiempos de Salida.                 LISTO
+- Cargar, agregar y modificar Conductores.                       LISTO
+- Cargar, agregar y modificar Paradas.                           LISTO
+- Cargar, agregar y modificar Tiempos.                           LISTO
+- Cargar y modificar avisos.                                     LISTO
+- Mostrar comentarios que no han sido modificados o rechazados.  LISTO
+- Aceptar y rechazar comentarios.                                LISTO
+- Quitar links de la izquierda.                                  LISTO
+
+AGREGARCMS.HTML DIFÍCIL. Josué
+- Agregar conseguir tiempos de salida, parada, extra, todos.     LISTO
+- Agregar nuevos tiemps paradas y conductores.                   LISTO
+- Quitar links de la izquierda.                                  LISTO
+
+

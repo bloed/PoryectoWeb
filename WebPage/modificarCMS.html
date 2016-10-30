@@ -18,90 +18,66 @@
         
         <div class = "infoavisospro">
             <div class ="opcionesInfoAviso">
-                <h3> Nombre parada </h3>
+                <h3 id="nombreParada" name="nombreParada"> Nombre parada </h3>
                 <img class ="imgInfoAviso" src="resources/images/qr.png" alt="">
 
-                <button class="btnSimpleDesignLong">Cambiar imagen</button>
+                <h3>Foto: <input type="file" id="imagen" name="imagen" accept="image/*" /></h3>
 
-                <h3>Tarifa: <input type="text" name="iAsunto" value=""></h3>
-                <button class="btnSimpleDesignLong">Cambiar tarifa</button>
+                <h3>Tarifa: <input type="text" id ="tarifa" name="tarifa" value="500"></h3>
+                <button onclick="modificarTarifa()" class="btnSimpleDesignLong">Cambiar tarifa</button>
                 <br><br>
 
                 <ul class= "navBar">
-                    <li class="liInfoaviso"> <a class= "ainfoaviso" href="infoParadas.html">Paradas/Horario</a></li>
-                    <li class="liInfoaviso"><a href="infoComentarios.html">Comentarios Ruta/Chofer</a></li>
-                    <li class="liInfoaviso"><a href="infoAvisos.html">Avisos Importantes</a></li>
+                    <li class="liInfoaviso"> <a class= "ainfoaviso" href="#">Paradas/Horario</a></li>
+                    <li class="liInfoaviso"><a href="#">Comentarios Ruta/Chofer</a></li>
+                    <li class="liInfoaviso"><a href="#">Avisos Importantes</a></li>
                 </ul>
                 
             </div>
             <div class="CMS">
                 <div class="modificarContenedor">
-                    <div class="modificarGenericocuadruple">
+                    <div id="divTiempo" class="modificarGenericocuadruple">
                         <h3>Tiempo salida</h3>
-                        <input type="text" name="iAsunto" value="tiempo1">
-                        <br>
-                        <input type="text" name="iAsunto" value="tiempo2">
+
                         <br><br>
-                        <button class="btnSimpleDesign">Modificar</button>
-                        <br><br>
-                        <input type="text" name="iAsunto" value=""><br><br>
-                        <button class="btnSimpleDesign">Agregar</button>
+                        <input type="text" id="tiempoSalida" name="tiempoSalida" value="1:00"><br><br>
+                        <button class="btnSimpleDesign" onclick="agregarTiempoSalida()">Agregar</button>
                     </div>
-                    <div class="modificarGenericocuadruple">
+                    <div id="divConductores" class="modificarGenericocuadruple">
                         <h3>Conductores</h3>
-                        <p> Conductor 1 <button class="btnSimpleDesignLong">Borrar</button></p>
-                        <p> Conductor 2 <button class="btnSimpleDesignLong">Borrar</button></p>
-                        <p> Conductor 3 <button class="btnSimpleDesignLong">Borrar</button></p>
-                        <p>Cedula: <input type="text" name="iAsunto" value=""></p>
-                        <p>Nombre: <input type="text" name="iAsunto" value=""></p>
-                        <button class="btnSimpleDesign">Agregar</button>
+
+                        <p>Cedula: <input type="text" id="cedula" name="cedula" value="123456789"></p>
+                        <p>Nombre: <input type="text" id="nombreConductor" name="nombreConductor" value="Salomón Peréz"> </p>
+                        <button onclick="agregarConductor()" class="btnSimpleDesign">Agregar</button>
                     </div>
-                    <div class="modificarGenericocuadruple">
+                    <div id="divParadas" class="modificarGenericocuadruple">
                         <h3>Paradas</h3>
-                        <input type="text" name="iAsunto" value="Parada 1">
-                        <br>
-                        <input type="text" name="iAsunto" value="Parada 2">
-                        <br>
-                        <input type="text" name="iAsunto" value="Parada 3">
+
                         <br><br>
-                        <button class="btnSimpleDesign">Modificar</button>
-                        <br><br>
-                        <input type="text" name="iAsunto" value=""><br><br>
-                        <button class="btnSimpleDesign">Agregar</button>
+                        <input type="text" id="paradas" name="paradas" value="Nueva Parada"><br><br>
+                        <button class="btnSimpleDesign" onclick="agregarParadas()">Agregar</button>
                     </div>
-                    <div class="modificarGenericocuadruple">
-                        <h3>Tiempos</h3>
-                        <input type="text" name="iAsunto" value="0:00">
-                        <br>
-                        <input type="text" name="iAsunto" value="0:10">
-                        <br>
-                        <input type="text" name="iAsunto" value="0:50">
+                    <div id="divTiempoExtra" class="modificarGenericocuadruple">
+                        <h3>Tiempo Extra</h3>
+
                         <br><br>
-                        <button class="btnSimpleDesign">Modificar</button>
+                        <button class="btnSimpleDesign" onclick="modificarTodo()">Modificar</button>
                     </div>
                 </div>
                 <div class="modificarContenedor">
                 <h3 class="h3block">Aceptar/Rechazar comentarios</h3>
-                    <div class="modificarComentario">
-                            <h2 class = "comentarioHeader"> Comentario de : Juanito sobre la ruta</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed laoreet mi. Fusce posuere ultrices leo nec dictum. Cras tempus pretium quam mollis tempus. Suspendisse ornare mi vel velit mattis, vitae pharetra felis feugiat. Maecenas eros mauris, cursus ac elit eu, auctor pulvinar lacus. Curabitur et tincidunt ante. Nam arcu felis, rutrum at dignissim eu, commodo et sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ultricies tincidunt feugiat. Maecenas consectetur leo eget mi euismod, a molestie tortor blandit.</p>
+                    <div id="divComentarios" class="modificarComentario">
+                            <ul id="listaComentarios">
 
-                            <button class="btnSimpleDesign">Aceptar</button>  <button class="btnSimpleDesign">Rechazar</button>
-                            <h2 class = "comentarioHeader"> Comentario de : anonimo sobre chofer 1 </h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed laoreet mi. Fusce posuere ultrices leo nec dictum. Cras tempus pretium quam mollis tempus. Suspendisse ornare mi vel velit mattis, vitae pharetra felis feugiat. Maecenas eros mauris, cursus ac elit eu, auctor pulvinar lacus. Curabitur et tincidunt ante. Nam arcu felis, rutrum at dignissim eu, commodo et sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ultricies tincidunt feugiat. Maecenas consectetur leo eget mi euismod, a molestie tortor blandit.</p>
-                            <button class="btnSimpleDesign">Aceptar</button>  <button class="btnSimpleDesign">Rechazar</button>
-
-                            <h2 class = "comentarioHeader"> Comentario de : anonimo sobre chofer 2 </h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed laoreet mi. Fusce posuere ultrices leo nec dictum. Cras tempus pretium quam mollis tempus. Suspendisse ornare mi vel velit mattis, vitae pharetra felis feugiat. Maecenas eros mauris, cursus ac elit eu, auctor pulvinar lacus. Curabitur et tincidunt ante. Nam arcu felis, rutrum at dignissim eu, commodo et sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ultricies tincidunt feugiat. Maecenas consectetur leo eget mi euismod, a molestie tortor blandit.</p>
-                            <button class="btnSimpleDesign">Aceptar</button>  <button class="btnSimpleDesign">Rechazar</button>
+                            </ul>
                     </div>
                 </div>
                 <div class="modificarContenedor">
                 <h3>Modificar aviso</h3>
-                    <div class="avisopro">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed laoreet mi. Fusce posuere ultrices leo nec dictum. Cras tempus pretium quam mollis tempus. Suspendisse ornare mi vel velit mattis, vitae pharetra felis feugiat. Maecenas eros mauris, cursus ac elit eu, auctor pulvinar lacus. Curabitur et tincidunt ante. Nam arcu felis, rutrum at dignissim eu, commodo et sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ultricies tincidunt feugiat. Maecenas consectetur leo eget mi euismod, a molestie tortor blandit.</p>
+                    <div id="divAvisos" class="avisopro">
+
                     </div>
-                    <button class="btnSimpleDesignLong">Modificar avisos</button>
+                    <button onclick="modificarAvisos()" class="btnSimpleDesignLong">Modificar avisos</button>
                 </div>
             </div>
         </div>
@@ -110,6 +86,6 @@
         <div class="footer">
             Access to facebook
         </div>
-
+    <script type="text/javascript" src="resources/js/modificarCMS.js"></script>>
     </body>
 </html>

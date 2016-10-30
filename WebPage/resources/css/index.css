@@ -274,22 +274,29 @@ Resultados
 }
 .agregarGenericotrio{
     float: left;
-    width: 33%;
+    width: 27%;
+    height: 250px;
+    overflow: auto;
 }
 .modificarGenericocuadruple{
     float: left;
     width: 25%;
+    height: 188px;
+    overflow: auto;
 }
 .agregarGenericoDobleR{
     float: left;
     width: 40%;
-    text-align: left 
+    height: 188px;
+    overflow: auto;
+    
 }
 .agregarGenericoDobleL{
     float: left;
     width: 20%;
     margin-left: 30%; 
     text-align: left;
+    
 }
 
 .CMS{
