@@ -286,7 +286,7 @@ Resultados
 }
 .agregarGenericoDobleR{
     float: left;
-    width: 40%;
+    width: 30%;
     height: 188px;
     overflow: auto;
     
@@ -296,7 +296,8 @@ Resultados
     width: 20%;
     margin-left: 30%; 
     text-align: left;
-    
+    overflow: auto;
+    height: 188px;
 }
 
 .CMS{
