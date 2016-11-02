@@ -97,7 +97,7 @@ function modificarTarifa(){
 cargarTarifa(999);
 
 /* TIEMPO SALIDAS, PARADAS Y TIEMPOS EXTRAS */
-function agregarTiempoSalida(tiempoSalida,cont){
+function agregarTiempoSalida(tiempoSalida){
 	if(tiempoSalida == null){
 		tiempoSalida = document.getElementById("tiempoSalida").value;
 	}
@@ -106,22 +106,24 @@ function agregarTiempoSalida(tiempoSalida,cont){
 	input.type = "text";
 	input.value = tiempoSalida;
 	input.name = "tiempoSalida";
+
 	div.insertBefore(input, div.children[1]);
-	if(cont == 1){
-		
-	}
-	else{
-		/*agregarParadas("NuevaParada",1);
-		agregarTiempoExtra("+5 min");*/
-	}
+	var btn = document.createElement("BUTTON");
+	btn.type = "button";
+	btn.className = "btnSimpleDesignLong";
+	btn.innerHTML = 'Borrar';
+	btn.addEventListener("click", function(){
+	    eliminarTiemposSalida(input,btn);
+	}, false);
+	div.insertBefore(btn, div.children[2]);
 }
 
-function eliminarTiempoSalida(){
+function eliminarTiemposSalida(input,btn){
 	var div = document.getElementById("divTiempo");
-	if(div.children[1].name == "tiempoSalida"){
-		div.removeChild(div.children[1]);
-	}
+	div.removeChild(input);
+	div.removeChild(btn);
 }
+
 agregarTiempoSalida("1:00");
 agregarTiempoSalida("2:00");
 agregarTiempoSalida("3:00");
@@ -138,34 +140,48 @@ function agregarParadas(parada,cont,tiempoExtra){
 	input.value = parada;
 	input.name = "parada";
 	div.insertBefore(input, div.children[1]);
+
+
 	if(cont == 1){
 		
 	}
 	else{
 		//agregarTiempoSalida("NuevoTiempoSalida",1);
-		agregarTiempoExtra(tiempoExtra);
-	}
-}
-
-function eliminarParadas(){
-	var div = document.getElementById("divParadas");
-	var div2 = document.getElementById("divTiempoExtra");
-	if(div.children[1].name == "parada"){
-		div.removeChild(div.children[1]);
-		div2.removeChild(div2.children[1]);
+		agregarTiempoExtra(tiempoExtra,input);
 	}
 }
 
 agregarParadas("Parada automática 1",null,"+10 min");
 agregarParadas("Parada automática 2",null,"+5 min");
 
-function agregarTiempoExtra(tiempoExtra,cont){
+function agregarTiempoExtra(tiempoExtra,inputParada){
 	var input = document.createElement("input");
 	var div = document.getElementById("divTiempoExtra");
 	input.type = "text";
 	input.value = tiempoExtra;
 	input.name = "tiempoExtra";
 	div.insertBefore(input, div.children[1]);
+
+
+	var btn = document.createElement("BUTTON");
+	btn.type = "button";
+	btn.className = "btnSimpleDesignLong";
+	btn.innerHTML = 'Borrar';
+	btn.addEventListener("click", function(){
+	    eliminarTiempoSalidaYParada(input,inputParada,btn);
+	}, false);
+
+	var divParadas = document.getElementById("divParadas");
+
+	divParadas.insertBefore(btn, divParadas.children[2]);
+}
+
+function eliminarTiempoSalidaYParada(inputTimepoExtra,inputParada,btn){
+	var div = document.getElementById("divTiempoExtra");
+	var div2 = document.getElementById("divParadas");
+	div.removeChild(inputTimepoExtra);
+	div2.removeChild(inputParada);
+	div2.removeChild(btn);
 }
 
 //agregarTiempoExtra("+5 min");
