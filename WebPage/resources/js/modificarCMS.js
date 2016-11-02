@@ -115,6 +115,13 @@ function agregarTiempoSalida(tiempoSalida,cont){
 		agregarTiempoExtra("+5 min");*/
 	}
 }
+
+function eliminarTiempoSalida(){
+	var div = document.getElementById("divTiempo");
+	if(div.children[1].name == "tiempoSalida"){
+		div.removeChild(div.children[1]);
+	}
+}
 agregarTiempoSalida("1:00");
 agregarTiempoSalida("2:00");
 agregarTiempoSalida("3:00");
@@ -140,6 +147,15 @@ function agregarParadas(parada,cont,tiempoExtra){
 	}
 }
 
+function eliminarParadas(){
+	var div = document.getElementById("divParadas");
+	var div2 = document.getElementById("divTiempoExtra");
+	if(div.children[1].name == "parada"){
+		div.removeChild(div.children[1]);
+		div2.removeChild(div2.children[1]);
+	}
+}
+
 agregarParadas("Parada automática 1",null,"+10 min");
 agregarParadas("Parada automática 2",null,"+5 min");
 
@@ -159,9 +175,10 @@ function modificarTodo(){
 	var tiemposSalida = document.getElementsByName("tiempoSalida");
 	var paradas = document.getElementsByName("parada");
 	var tiemposExtra = document.getElementsByName("tiempoExtra");
+	var conductores = document.getElementsByName("conductores");
 
 	//llamar php?
-	alert("Todo modificado referente a paradas, tiempos de salida y tiempos extra");
+	alert("Todo modificado referente a paradas, tiempos de salida, tiempos extra y conductores.");
 }
 
 /* CONDUCTORES */
@@ -190,8 +207,6 @@ function agregarConductor(nombreConductor,cedula){
 	//llama php
 }
 
-agregarConductor("Chepito", "1-16390935");
-agregarConductor("Kirstein", "1-16390937");
 
 function quitarConductor(p,nombre){
 	var div = document.getElementById("divConductores");

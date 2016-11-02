@@ -35,35 +35,39 @@
                 
             </div>
             <div class="CMS">
+                <form id="formModificarCMS" value="formModificarCMS">
                 <div class="modificarContenedor">
                     <div id="divTiempo" class="modificarGenericocuadruple">
                         <h3>Tiempo salida</h3>
 
                         <br><br>
                         <input type="text" id="tiempoSalida" name="tiempoSalida" value="1:00"><br><br>
-                        <button class="btnSimpleDesign" onclick="agregarTiempoSalida()">Agregar</button>
+                        <button type="button" class="btnSimpleDesign" onclick="agregarTiempoSalida()">Agregar</button>
+                        <button type="button"class="btnSimpleDesign" onclick="eliminarTiempoSalida()">Eliminar</button>
                     </div>
                     <div id="divConductores" class="modificarGenericocuadruple">
                         <h3>Conductores</h3>
 
                         <p>Cedula: <input type="text" id="cedula" name="cedula" value="123456789"></p>
                         <p>Nombre: <input type="text" id="nombreConductor" name="nombreConductor" value="Salomón Peréz"> </p>
-                        <button onclick="agregarConductor()" class="btnSimpleDesign">Agregar</button>
+                        <button type="button" onclick="agregarConductor()" class="btnSimpleDesign">Agregar</button>
                     </div>
                     <div id="divParadas" class="modificarGenericocuadruple">
                         <h3>Paradas</h3>
 
                         <br><br>
                         <input type="text" id="paradas" name="paradas" value="Nueva Parada"><br><br>
-                        <button class="btnSimpleDesign" onclick="agregarParadas()">Agregar</button>
+                        <button type="button" class="btnSimpleDesign" onclick="agregarParadas()">Agregar</button>
+                        <button type="button" class="btnSimpleDesign" onclick="eliminarParadas()">Eliminar</button>
                     </div>
                     <div id="divTiempoExtra" class="modificarGenericocuadruple">
                         <h3>Tiempo Extra</h3>
 
                         <br><br>
-                        <button class="btnSimpleDesign" onclick="modificarTodo()">Modificar</button>
+                        <button type="submit" class="btnSimpleDesign" name="modificar" value="modificar" onclick="modificarTodo()">Modificar</button>
                     </div>
                 </div>
+                </form>
                 <div class="modificarContenedor">
                 <h3 class="h3block">Aceptar/Rechazar comentarios</h3>
                     <div id="divComentarios" class="modificarComentario">
