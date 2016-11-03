@@ -472,7 +472,19 @@ ul.paradas{
     background: white;
 }
 
+.oculto{
+    display:none;
+}
+.visible{
+    display: block;
+}
+.mostrarAvanzadas{
+    text-decoration: underline;
+}
 
+.mostrarAvanzadas:hover{
+    cursor: pointer;
+}
 
 
 

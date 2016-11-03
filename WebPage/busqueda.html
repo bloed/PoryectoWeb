@@ -19,33 +19,18 @@
         <div class = "busqueda">
             <div class ="ingresoBusqueda">
                 <form class=formBusqueda action="">
-                    <input class ="inputSearch" type="text" name="lastname" placeholder="Busqueda..."> <br>
-                    <span class="mostrarAvanzadas" tabindex="0">Mostrar opciones avanzadas</span><br>
-                    <input type="checkbox" name="opcion1" value="opcion1"> Opción Avanzada 1<br>
-                    <input type="checkbox" name="opcion1" value="opcion1"> Opción Avanzada 1<br>
+                    <input id="textBusqueda" class ="inputSearch" type="text" name="lastname" placeholder="Busqueda..." value=""> <br>
+                    <p><button type="button" class="btnSimpleDesign" onclick="busqueda()">Buscar</button></p>
+                    <span id="textAvanzado" class="mostrarAvanzadas" tabindex="0" onclick="mostarOpcionAvanzada()">Mostrar opciones avanzadas</span><br><br>
+                    <div id="Avanzada" class="oculto">
+                        <input type="checkbox" name="opcion1" value="opcion1"> Opción Avanzada 1<br>
+                        <input type="checkbox" name="opcion1" value="opcion1"> Opción Avanzada 1<br>
+                    </div>
                 </form>
                 
             </div>
-            <div class = "resultados">
+            <div id ="resultados" class = "resultados">
                 <H1>Resultados</H1>
-                <div class="resultado">
-                    <img class = "imgResultado" src="resources/images/ruta.png">
-                    <div class ="descripcionResultado">
-                        <h4>Información de la ruta o conductor</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed laoreet mi. Fusce posuere ultrices leo nec dictum. Cras tempus pretium quam mollis tempus. Suspendisse ornare mi vel velit mattis, vitae pharetra felis feugiat. Maecenas eros mauris, cursus ac elit eu, auctor pulvinar lacus. Curabitur et tincidunt ante. Nam arcu felis, rutrum at dignissim eu, commodo et sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ultricies tincidunt feugiat. Maecenas consectetur leo eget mi euismod, a molestie tortor blandit.</p>
-                    </div>
-                    <a href="infoParadas.html"><button class="btnVerMas">Ver Más</button></a>
-                </div>
-                <br>
-                <div class="resultado">
-                    <img class = "imgResultado" src="resources/images/ruta.png">
-                    <div class ="descripcionResultado">
-                        <h4>Información de la ruta o conductor</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed laoreet mi. Fusce posuere ultrices leo nec dictum. Cras tempus pretium quam mollis tempus. Suspendisse ornare mi vel velit mattis, vitae pharetra felis feugiat. Maecenas eros mauris, cursus ac elit eu, auctor pulvinar lacus. Curabitur et tincidunt ante. Nam arcu felis, rutrum at dignissim eu, commodo et sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ultricies tincidunt feugiat. Maecenas consectetur leo eget mi euismod, a molestie tortor blandit.</p>
-                    </div>
-                    <a href="infoParadas.html"><button class="btnVerMas">Ver Más</button></a>
-                </div>
-                <br>
                 
             </div>
         </div>
@@ -55,5 +40,7 @@
             Access to facebook
         </div>
 
+
+        <script type="text/javascript" src="resources/js/busqueda.js"></script>
     </body>
 </html>
