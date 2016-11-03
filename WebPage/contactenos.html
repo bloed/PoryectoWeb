@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="resources/css/index.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     </head>
-    <body>
+    <body onload="onload()">
         <header>
         <img src= "resources/images/icon2.png" alt= "nombre y logo de la compañia">
         </header>
@@ -20,25 +20,24 @@
     <div class="mainFormulario"> 
         <div class= "infoEmpresa"> 
         <img class="imagenDinamica" src="resources/images/slide3.jpg"> </br>
-        	<p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed laoreet mi. Fusce posuere ultrices leo nec dictum. Cras tempus pretium quam mollis tempus. Suspendisse ornare mi vel velit mattis, vitae pharetra felis feugiat. Maecenas eros mauris, cursus ac elit eu, auctor pulvinar lacus. Curabitur et tincidunt ante. Nam arcu felis, rutrum at dignissim eu, commodo et sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ultricies tincidunt feugiat. Maecenas consectetur leo eget mi euismod, a molestie tortor blandit.</p>
+        	<p id="infoContactenos"> </p>
         </div>
         <div class= "formulario">
-        <form>
+        <form action="">
 			</br>
 			<label>Nombre: &#160&#160 </label><input type="text" name="iNombre" value = "Nombre">
 		    <label> &#160 &#160 &#160 &#160 &#160&#160 &#160 Asunto:  &#160</label> <input type="text" name="iAsunto" value="Asunto"> </br></br></br>
 
 		    <label>Tipo de consulta:&#160&#160&#160</label>
-				<input type="radio" value="rProblemaTecnico" name="consulta" checked="checked"> Problema Técnico
-				<input type="radio" value="rConsultaEmpresa" name="consulta"> Consulta Empresa </br></br>
+				<input type="radio" value="rProblemaTecnico" name="tipoConsulta" checked="checked"> Problema Técnico
+				<input type="radio" value="rConsultaEmpresa" name="tipoConsulta"> Consulta Empresa </br></br>
 		  
 		    <label>Consulta:</label>
 		    </br></br>
-		    <textarea rows="8" cols="69"> Escriba acá su consulta
+		    <textarea rows="8" cols="69" name="consulta"> Escriba acá su consulta
 			</textarea>
 			</br></br></br>
-			<label> Forma de contacto (Teléfono / Correo Electrónico):&#160 </label><input type="text" name="iContacto" value = "83273913">
+			<label> Forma de contacto (Teléfono / Correo Electrónico):&#160 </label><input type="text" name="iCorreo" value = "83273913">
 			</br></br>
 			<input type="submit" value="Enviar" name="bEnviar">
 		</form>
@@ -50,6 +49,6 @@
     <div class="footer">
         Access to facebook
     </div>
-
+    <script src="resources/js/contactenos.js"></script>
     </body>
 </html>

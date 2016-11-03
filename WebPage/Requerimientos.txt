@@ -5,12 +5,12 @@ INDEX.HTML FÁCIL. Joshua.
 - Cargar información de inicio.  LISTO
 
 ACERCADE.HTML FÁCIL. Joshua.
-- Cargar requisitos en la lista.  Listo
-- Carga información del lado.
+- Cargar requisitos en la lista.  LISTO
+- Carga información del lado.  LISTO
 
 CONTACTOS.HTML FÁCIL. Joshua.
-- Cargar información del lado.
-- Mandar información del formulario al PHP.
+- Cargar información del lado. LISTO
+- Mandar información del formulario al PHP. LISTO
 
 BUSQUEDA.HTML  NORMAL Adrián.
 - Cargar información de un conjunto de rutas o conductores.
