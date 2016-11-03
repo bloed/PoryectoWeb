@@ -2,10 +2,10 @@ Requerimientos (puede que falten más, agregenlos por cualquier cosa).
 
 INDEX.HTML FÁCIL. Joshua.
 - Display imágenes                                               LISTO.
-- Cargar información de inicio.
+- Cargar información de inicio.  LISTO
 
 ACERCADE.HTML FÁCIL. Joshua.
-- Cargar requisitos en la lista.
+- Cargar requisitos en la lista.  Listo
 - Carga información del lado.
 
 CONTACTOS.HTML FÁCIL. Joshua.
