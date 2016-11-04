@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="resources/css/index.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     </head>
-    <body>
+    <body onload="onload()">
     <header>
         <img src= "resources/images/icon2.png" alt= "nombre y logo de la compañia">
     </header>
@@ -18,14 +18,15 @@
         
         <div class = "infoavisos">
             <div class ="opcionesInfoAviso">
-            <h3> Nombre parada </h3>
-                <img class ="imgInfoAviso" src="resources/images/qr.png" alt="">
-                <h3>Tarifa: $5 </h6>
+            <h3 id="nombreRuta"></h3>
+                <img id = "imgQR"class ="imgInfoAviso"  src="" alt="">
+                <h3>Tarifa:</h3>
+                <h3 id = "tarifa"></h3>
 
                 <ul class= "navBar">
-                    <li class="liInfoaviso"> <a class= "ainfoaviso" href="infoParadas.html">Paradas/Horario</a></li>
-                    <li class="liInfoaviso"><a href="infoComentarios.html">Comentarios Ruta/Chofer</a></li>
-                    <li class="liInfoaviso"><a href="infoAvisos.html">Avisos Importantes</a></li>
+                    <li class="liInfoaviso"> <a id = "verParadas"class= "ainfoaviso" >Paradas/Horario</a></li>
+                    <li class="liInfoaviso"><a id="infoComentarios" href="infoComentarios.html">Comentarios Ruta/Chofer</a></li>
+                    <li class="liInfoaviso"><a id="infoAvisos" href="infoAvisos.html">Avisos Importantes</a></li>
                 </ul>
                 
             </div>
@@ -33,28 +34,12 @@
                 <H1>Listas de Parada con su Horario</H1>
                 <div class = "paradas">
                 <h3>Horarios de salida</h3>
-                    <ul class="paradas">
-                        <li> 11:30</li>
-                        <li> 1:10</li>
-                        <li> 2:10</li>
-                        <li> 3:10</li>
-                        <li> 4:10</li>
-                        <li> 6:10</li>
-                        <li> 7:10</li>
-                        <li> 8:10</li>
+                    <ul id="HorasSalida" class="paradas">
                     </ul>
                 </div>
                 <div class="paradas">
                 <h3> Paradas</h3>
-                    <ul class="paradas">
-                        <li> Parada 1 + 0:00</li>
-                        <li> Parada 2 + 0:05</li>
-                        <li> Parada 3 + 0:10</li>
-                        <li> Parada 4 + 0:20</li>
-                        <li> Parada 5 + 0:30</li>
-                        <li> Parada 6 + 0:35</li>
-                        <li> Parada 7 + 0:40</li>
-                        <li> Parada 8 + 0:50</li>
+                    <ul id = "paradas" class="paradas">
                     </ul>
                 </div>
             </div>
@@ -64,8 +49,6 @@
         <div class="footer">
             Access to facebook
         </div>
-        <script type="text/javascript">
-            alert(window.location.search);
-        </script>>
+        <script src="resources/js/infoparadas.js"></script>
     </body>
 </html>

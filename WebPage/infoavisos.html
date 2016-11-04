@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="resources/css/index.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     </head>
-    <body>
+    <body onload="onload()">
     <header>
         <img src= "resources/images/icon2.png" alt= "nombre y logo de la compañia">
     </header>
@@ -18,28 +18,20 @@
         
         <div class = "infoavisos">
             <div class ="opcionesInfoAviso">
-            <h3> Nombre parada </h3>
-                <img class ="imgInfoAviso" src="resources/images/qr.png" alt="">
-                <h3>Tarifa: $5 </h6>
+            <h3 id="nombreRuta"></h3>
+                <img id = "imgQR"class ="imgInfoAviso"  src="" alt="">
+                <h3>Tarifa:</h3>
+                <h3 id = "tarifa"></h3>
 
                 <ul class= "navBar">
-                    <li class="liInfoaviso"> <a class= "ainfoaviso" href="infoParadas.html">Paradas/Horario</a></li>
-                    <li class="liInfoaviso"><a href="infoComentarios.html">Comentarios Ruta/Chofer</a></li>
-                    <li class="liInfoaviso"><a href="infoAvisos.html">Avisos Importantes</a></li>
+                    <li class="liInfoaviso"> <a id = "verParadas"class= "ainfoaviso" >Paradas/Horario</a></li>
+                    <li class="liInfoaviso"><a id="infoComentarios" href="infoComentarios.html">Comentarios Ruta/Chofer</a></li>
+                    <li class="liInfoaviso"><a id="infoAvisos" href="infoAvisos.html">Avisos Importantes</a></li>
                 </ul>
                 
             </div>
-            <div class = "avisos">
+            <div id = "avisos" class = "avisos">
                 <H1>Avisos</H1>
-                <div class="aviso">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed laoreet mi. Fusce posuere ultrices leo nec dictum. Cras tempus pretium quam mollis tempus. Suspendisse ornare mi vel velit mattis, vitae pharetra felis feugiat. Maecenas eros mauris, cursus ac elit eu, auctor pulvinar lacus. Curabitur et tincidunt ante. Nam arcu felis, rutrum at dignissim eu, commodo et sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ultricies tincidunt feugiat. Maecenas consectetur leo eget mi euismod, a molestie tortor blandit.</p>
-                </div>
-                <div class="aviso">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed laoreet mi. Fusce posuere ultrices leo nec dictum. Cras tempus pretium quam mollis tempus. Suspendisse ornare mi vel velit mattis, vitae pharetra felis feugiat. Maecenas eros mauris, cursus ac elit eu, auctor pulvinar lacus. Curabitur et tincidunt ante. Nam arcu felis, rutrum at dignissim eu, commodo et sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ultricies tincidunt feugiat. Maecenas consectetur leo eget mi euismod, a molestie tortor blandit.</p>
-                </div>
-                <div class="aviso">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed laoreet mi. Fusce posuere ultrices leo nec dictum. Cras tempus pretium quam mollis tempus. Suspendisse ornare mi vel velit mattis, vitae pharetra felis feugiat. Maecenas eros mauris, cursus ac elit eu, auctor pulvinar lacus. Curabitur et tincidunt ante. Nam arcu felis, rutrum at dignissim eu, commodo et sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ultricies tincidunt feugiat. Maecenas consectetur leo eget mi euismod, a molestie tortor blandit.</p>
-                </div>
                 <br>
             </div>
         </div>
@@ -48,6 +40,6 @@
         <div class="footer">
             Access to facebook
         </div>
-
+         <script src="resources/js/infoaviso.js"></script>
     </body>
 </html>
