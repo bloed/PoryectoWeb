@@ -17,13 +17,13 @@ BUSQUEDA.HTML  NORMAL Adrián.
 - Conseguir la información del buscador y mandarlo al PHP.
 
 INFOPARADAS.HTML DIFÍCIL. Joshua.
-- Cargar nombre de la parada.
-- Cargar la tarifa.
-- Cargar los horarios de salida.
-- Cargar las paradas.
+- Cargar nombre de la parada. LISTO
+- Cargar la tarifa. LISTA 
+- Cargar los horarios de salida. LISTO
+- Cargar las paradas. LISTO
 
 INFOCOMENTARIOS.HTML DIFÍCIL Joshua.
-- Cargar nombre de la parada.
+- Cargar nombre de la parada. 
 - Cargar la tarifa.
 - Cargar nombres de la ruta/Chofer.
 - Cargar comentarios aceptados de rutas.
