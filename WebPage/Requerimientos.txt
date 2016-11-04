@@ -23,16 +23,14 @@ INFOPARADAS.HTML DIFÍCIL. Joshua.
 - Cargar las paradas. LISTO
 
 INFOCOMENTARIOS.HTML DIFÍCIL Joshua.
-- Cargar nombre de la parada. 
-- Cargar la tarifa.
-- Cargar nombres de la ruta/Chofer.
-- Cargar comentarios aceptados de rutas.
-- Cargar comentarios aceptados de chofer.
+- Cargar nombre de la parada. LISTO
+- Cargar la tarifa. LISTO
+- Cargar comentarios. LISTO
 
 INFOAVISOS.HTML NORMAL. Joshua.
-- Cargar nombre de la parada.
-- Cargar la tarifa.
-- Cargar cada uno de los avisos.
+- Cargar nombre de la parada. LISTO
+- Cargar la tarifa. LISTO
+- Cargar cada uno de los avisos. LISTO
 
 LOGIN.HTML FÁCIL. Adrián.
 - Conseguir campos y mandarlos al php.

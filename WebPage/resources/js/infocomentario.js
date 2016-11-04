@@ -24,19 +24,28 @@ function getInfoRuta(){
     var tarifa = document.getElementById("tarifa");
     tarifa.innerText = ruta.tarifa; 
 
-    var ul = document.getElementById("HorasSalida");
-    for(var i = 0 ;i<ruta.horasSalida.length;i++){
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(ruta.horasSalida[i]));
-        ul.appendChild(li);
-    }
+    var comments = document.getElementById("comentarios");
 
-    var ul = document.getElementById("paradas");
-    for(var i = 0 ;i<ruta.paradas.length;i++){
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(ruta.paradas[i]));
-        ul.appendChild(li);
-    }
+    var comentarios = requestComentarios(idRuta);
+
+    for (var i = 0; i< comentarios.comentarios.length;i++){
+        var divComment = document.createElement("div");
+        divComment.className = "comentario";
+
+        var h2 = document.createElement("h2");
+        h2.className = "comentarioHeader"
+        h2.innerText = comentarios.comentarios[i].autor;
+
+        var p = document.createElement("p");
+        p.innerText = comentarios.comentarios[i].comentario;
+
+        divComment.appendChild(h2);
+        divComment.appendChild(p);
+
+        comments.appendChild(divComment);
+
+    }    
+
 }
 function getIdRuta(){
     var parametros = location.search.substr(1).split("&");
@@ -67,4 +76,23 @@ function requestInfoRuta(id){
         ]
 
     };
+}
+
+function requestComentarios(idRuta){
+    return {
+        comentarios:[
+            {
+                autor:"Juanito:",
+                comentario: "Buen servicio"
+            },
+            {
+                autor:"Juanito2:",
+                comentario: "Mal Servicio"
+            },
+            {
+                autor:"Jousuep:",
+                comentario: "El chofer me cobró más y no me quizo devolver el dinero"
+            }
+        ]
+    }
 }

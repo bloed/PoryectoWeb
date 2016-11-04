@@ -336,7 +336,7 @@ InfoComentarios
     border: 1px solid black;
     padding: 10px;
     margin: 10px;
-    width: 80%;
+    width: 94%;
     text-align: left;
     overflow: scroll;
     height: 150px;
@@ -356,8 +356,7 @@ h2.comentarioHeader{
     font-size: 15px;
 }
 button.comentarioButton{
-    float:left;
-    display: block;
+    
     margin-top: 8%;
     margin-left: 2%;
     margin-bottom: 12%;
