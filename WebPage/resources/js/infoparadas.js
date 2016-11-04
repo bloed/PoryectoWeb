@@ -2,6 +2,8 @@ function onload(){
     getInfoRuta();
 }
 function getInfoRuta(){
+    var idRuta = getIdRuta();
+
     var ruta = requestInfoRuta(); 
     
     var nombre = document.getElementById("nombreRuta");
@@ -27,7 +29,21 @@ function getInfoRuta(){
         ul.appendChild(li);
     }
 }
-function requestInfoRuta(){
+function getIdRuta(){
+    var parametros = location.search.substr(1).split("&");
+    var result = null,
+        tmp = [];
+    var items = location.search.substr(1).split("&");
+    
+    for (var index = 0; index < items.length; index++) {
+        tmp = items[index].split("=");
+        if (tmp[0] === "idRuta") result = decodeURIComponent(tmp[1]);
+    }
+    return result;
+}
+function requestInfoRuta(id){
+    //request the route to the server and check the
+    //current user
     return {
         nombre:"Nombre Ruta",
         urlQRImg:"resources/images/qr.png",
