@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Trabli</title>
+		<link href="../css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+	<!--start-wrap!-->
+	<div class="wrap">
+		<!--start-header!-->
+		<div class="header"  id="top">
+			<!--top-header!-->
+			<div class="top-header">
+				<!--start-logo!-->
+				<div class="logo">
+					<a href="index.html"><img src="../images/logo.png" title="logo" /></a>
+				</div>
+				<!--End-logo!-->
+				<!--start-social-icons!-->
+				<div class="social-icons">
+					<ul>
+						<li><a href="#"><img src="../images/facebook.png" title="facebook" /></a></li>
+						<li><a href="#"><img src="../images/twitter.png" title="twitter" /></a></li>
+						<li><a href="#"><img src="../images/google.png" title="google pluse" /></a></li>
+					</ul>
+				</div>
+				<div class="clear"> </div>
+				<!--End-social-icons!-->
+			</div>
+			<!--End-top-header!-->
+			<!---start-top-nav!-->
+			<div class="top-nav">
+				<div class="top-nav-left">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="busqueda.html">Busqueda</a></li>
+						<li class="active"><a href="contact.html">Contactenos</a></li>
+						<li><a href="#">Mapa</a></li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+				<div class="top-nav-right">
+					<form>
+						<input type="text"><input type="submit" value="" />
+					</form>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			<!---End-top-nav!-->
+		</div>
+		<!--End-header!-->
+	</div>
+	<!--End-wrap!-->
+		 <!---start-content!-->
+		 <div class="content">
+		 	<!---start-contact!-->
+		 	<div class="contact">
+		 		<div class="wrap">
+				<div class="section group">				
+				
+				<div class="col span_2_of_3">
+				  <div class="contact-form">
+				  	<h3>Contactenos!</h3>
+				  	<h2 class="pStyle">Puede utilizar este medio para comunicarse directamente con Trabli. Para cualquier comentario sobre alguna ruta puede utilizar la funcionalidad de comentarios en cada ruta. </h2>
+					    <form method="post" action="../php/sendComment.php">
+					    	<div>
+						    	<span><label>Nombre</label></span>
+						    	<span><input name="nombre" type="text" class="textbox"></span>
+						    </div>
+						    <div>
+						    	<span><label>Correo</label></span>
+						    	<span><input name="correo" type="mail" class="textbox"></span>
+						    </div>
+						    <div>
+						     	<span><label>Telefono</label></span>
+						    	<span><input name="tel" type="number" class="textbox"></span>
+						    </div>
+						    <div>
+						    	<span><label>Cuerpo del mensaje</label></span>
+						    	<span><textarea name="mensaje"> </textarea></span>
+						    </div>
+						   <div>
+						   		<span><input type="submit" value="Submit"></span>
+						  </div>
+					    </form>
+
+				    </div>
+  				</div>				
+			  </div>
+			</div>
+			</div>
+		 	<!---End-contact!-->
+		 <!---End-content!-->
+		 <!---start-footer!-->
+		 <div class="copy-right">
+		<p>TradeMark Trabli, Adrian Lopez Quesada</p>
+	</div>
+		 <!---End-footer!-->
+	</body>
+</html>
+

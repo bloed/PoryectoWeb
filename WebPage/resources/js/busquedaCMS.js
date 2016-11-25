@@ -24,7 +24,7 @@ function cargarResultado(idBusqueda, imgBase, descripcion, nombreRuta){
 	butEliminar.addEventListener("click", function(){ eliminar(idBusqueda)} );
 
 	//link
-	link.href="infoParadas.html?idRuta=" + idBusqueda;
+	link.href="modificarCMS.html?idRuta=" + idBusqueda;
 	link.appendChild(but);
 
 	//nombre

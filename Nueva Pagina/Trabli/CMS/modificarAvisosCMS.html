@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Trabli CMS</title>
+		<link href="../css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="../js/security.js"></script>
+
+	</head>
+	<body>
+	<!--start-wrap!-->
+	<div class="wrap">
+		<!--start-header!-->
+		<div class="header"  id="top">
+			<!--top-header!-->
+			<div class="top-header">
+				<!--start-logo!-->
+				<div class="logo">
+					<a href="index.html"><img src="../images/logo.png" title="logo" /></a>
+				</div>
+				<!--End-logo!-->
+				<!--start-social-icons!-->
+				<div class="social-icons">
+					<ul>
+						<li><a href="#"><img src="../images/facebook.png" title="facebook" /></a></li>
+						<li><a href="#"><img src="../images/twitter.png" title="twitter" /></a></li>
+						<li><a href="#"><img src="../images/google.png" title="google pluse" /></a></li>
+					</ul>
+				</div>
+				<div class="clear"> </div>
+				<!--End-social-icons!-->
+			</div>
+			<!--End-top-header!-->
+			<!--start-top-nav!-->
+			<div class="top-nav">
+				<div class="top-nav-left">
+					<ul>
+						<li><a id="a1">Inicio</a></li>
+						<li><a id="a2">Datos Basicos</a></li>
+						<li class="active"><a id="a3">Avisos</a></li>
+						<li><a id= "a4">Paradas/Tiempos</a></li>
+						<li><a id="a5">Responder Comentarios</a></li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+				<div class="top-nav-right">
+					<form>
+						<input type="text"><input type="submit" value="" />
+					</form>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			<!---End-top-nav!-->
+		</div>
+		<!--End-header!-->
+	</div>
+	<!--End-wrap!-->
+		 <!---start-content!-->
+		 <div class="content">
+		 	<!---start-about!-->
+		 	<div class="about-us">
+		 			<div class="wrap">
+						<div class="about-header">
+							<h3 id="nombre"></h3>
+							<div class="borderLine"></div>
+							<div class="clear"> </div>
+						</div>
+						<div class="testmonials">
+							<div class="wrap">
+								<div class="testmonial-grid">
+									<h3 class="about-h3 red">Avisos</h3>
+									<p>Aqui puede agregar nuevos avisos de la ruta con la fecha donde desee que se borren, ademas modificar los avisos y su duracion o eliminarlos por completo.</p>
+
+									<div id="actuales">
+									</div>
+									<div class="borderLine"></div>
+									<br>
+									<a href="#">Nuevo Aviso </a>
+									<p>Fecha de borrado: <input id="nuevoTiempo" name="userName" type="date" class="textbox"></p>
+									<span><textarea id="nuevoTexto" name="userMsg" class="txtComment"></textarea></span>
+									<div class="gallery-button modify-button"><a class="clickable" onclick=" agregarAviso()">Agregar</a></div>
+
+								</div>
+							</div>
+						</div>
+						<div class="borderLine"></div>
+					</div>
+				</div>
+		 	<!---End-about---->
+		 </div>
+		 <!---End-content---->
+		 <!---start-footer---->
+			<div class="copy-right">
+		<p>TradeMark Trabli, Adrian Lopez Quesada</p>
+	</div>
+		 <!---End-footer---->
+	<script type="text/javascript" src="../js/modAvisos.js"></script>
+	</body>
+</html>
+

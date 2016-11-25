@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Trabli CMS</title>
+		<link href="../css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="../js/security.js"></script>
+	</head>
+	<body>
+	<!--start-wrap!-->
+	<div class="wrap">
+		<!--start-header!-->
+		<div class="header"  id="top">
+			<!--top-header!-->
+			<div class="top-header">
+				<!--start-logo!-->
+				<div class="logo">
+					<a href="index.html"><img src="../images/logo.png" title="logo" /></a>
+				</div>
+				<!--End-logo!-->
+				<!--start-social-icons!-->
+				<div class="social-icons">
+					<ul>
+						<li><a href="#"><img src="../images/facebook.png" title="facebook" /></a></li>
+						<li><a href="#"><img src="../images/twitter.png" title="twitter" /></a></li>
+						<li><a href="#"><img src="../images/google.png" title="google pluse" /></a></li>
+					</ul>
+				</div>
+				<div class="clear"> </div>
+				<!--End-social-icons!-->
+			</div>
+			<!--End-top-header!-->
+			<!--start-top-nav!-->
+			<div class="top-nav">
+				<div class="top-nav-left">
+					<ul>
+						<li><a id="a1">Inicio</a></li>
+						<li class="active"><a id="a2">Datos Basicos</a></li>
+						<li><a id="a3">Avisos</a></li>
+						<li><a id= "a4">Paradas/Tiempos</a></li>
+						<li><a id="a5">Responder Comentarios</a></li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+				<div class="top-nav-right">
+					<form>
+						<input type="text"><input type="submit" value="" />
+					</form>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			<!---End-top-nav!-->
+		</div>
+		<!--End-header!-->
+	</div>
+	<!--End-wrap!-->
+		 <!---start-content!-->
+		 <div class="content">
+		 	<!---start-about!-->
+		 	<div class="about-us">
+		 			<div class="wrap">
+						<div class="about-header">
+							<p class="pStyle"> Utilizar la barra de navegacion para modificar o agregar nuevo informacion a la ruta actual</p>
+							<p class="pStyle"> No olvide agregar paradas y tiempos para que su ruta se despliegue a los usuarios</p>
+							<p id="mensaje2" class="pStyle"> Presionar el boton modificar para cambios en el nombre, codigo, tarifa o imagen. Los choferes es automatico.</p>
+							<br>
+							<form name="myForm" onsubmit = "return validateForm()" id="type" action="../php/updateGeneral.php" method="post" enctype="multipart/form-data">
+
+							<h3>Nombre: <input id="nombre" name="nombre" type="text" class="textbox textInput" value=""></h3>
+							<br>
+							<input id="id" type="hidden" name="id" value="">
+							<div class="borderLine"></div>
+							<div class="clear"> </div>
+						</div>
+
+						<div class="borderLine"></div>
+					<div class="specials">
+					<div class="clear"> </div>
+					<div class="specials-grids">
+						<div class="special-grid special-grid-left special-grid-CMSL ">
+							<img class="rImage" id="imagenGeneral" src="" title="image-name">
+							<input type="file" id="myFile" name="file">
+							<a href="#">Codigo: <input id="codigo" name="codigo" type="text" class="textbox" value=""></a>
+							<br>
+							<a href="#">Precio: <input id="tarifa" name="tarifa" type="number" class="textbox textInput" value=""> colones</a>
+							<div class="gallery-button"><input id="butform" class="butBonito" type="submit" value="Modificar"></a></div>
+							
+						</div>
+						</form>
+						
+
+						<div id="divChofer" class="special-grid special-grid-left fFloatR">
+							<a class = "blue" href="#">Choferes</a>
+							<div id="choferes">
+								<!--<div class="gallery-grid">
+									<div class="resultImageChofer">
+										<a href="images/slider3.jpg"><img class="rImage" src="images/busqueda3.jpg" alt=""></a>
+									</div>
+									<div class="resultDataChofer">
+										<h4>Adrian Lopez Quesada</h4>
+										<div class="gallery-button modify-button"><a href="#">Ver Pagina</a><br><br><a href="#">&#160&#160Eliminar&#160&#160</a></div>
+
+									</div>
+								</div> !-->
+								
+							</div>
+							<div class="gallery-grid">
+								<h4> Chofer existente en el sistemna </h4>
+								<br>
+								<div class="resultImageChofer">
+									<a href="images/slider3.jpg"><img class="rImage" src="../images/busqueda4.jpg" alt=""></a>
+								</div>
+								<div class="resultDataChofer">
+									<h4>Chofer: <select id="selectActual" class="textInput">
+
+									</select></h4>
+									<div class="gallery-button modify-button"><br><br><a onclick ="agregarChoferExistente()" class="clickable">&#160&#160Agregar&#160&#160</a></div>
+								</div>
+							</div>
+							<div class="gallery-grid">
+								<h4> Nuevo chofer en el sistema </h4>
+								<br>
+								<div class="resultImageChofer">
+									<a href="images/slider3.jpg"><img class="rImage" src="../images/busqueda4.jpg" alt=""></a>
+								</div>
+								<div class="resultDataChofer">
+								<form action="../php/insertChoferEmpresaRuta.php" method="post" enctype="multipart/form-data">
+									<input id="id2" type="hidden" name="empresa" value="">
+									<input id="id3" type="hidden" name="ruta" value="">
+									<h4> Imagen &#160&#160<input type="file" name="file" id="myFile"></h4>
+									<br>
+									<h4>Nombre: <input name="nombre" type="text" class="textbox textInput" value=""></h4>
+									<h4>Cedula: &#160&#160<input name="cedula" type="number" class="textbox textInput" value=""></h4>
+									<div class="gallery-button modify-button"><br><br><input class="butBonito" type="submit" value="Agregar"></div>
+								</form>
+								</div>
+							</div>
+							
+
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<div class="clear"> </div>
+					</div>
+					</div>
+
+		 	<!---End-about---->
+		 </div>
+		 <!---End-content---->
+		 <!---start-footer---->
+			<div class="copy-right">
+		<p>TradeMark Trabli, Adrian Lopez Quesada</p>
+	</div>
+		 <!---End-footer---->
+	<script type="text/javascript" src="../js/modRuta.js"></script>
+	</body>
+</html>
+
+C:\xampp\htdocs\js
